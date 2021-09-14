@@ -22,7 +22,7 @@ const db_data = process.env.DB_DATA;
 console.log(db_url, db_user, db_pass, db_data);
 Conn(db_url, db_user, db_pass, db_data);
 
-const port = 3000;
+const port = 3001;
 
 const tarefasRouter = require('./routers/tarefas.routes');
 app.use('/tarefas', tarefasRouter);
@@ -30,4 +30,3 @@ app.use('/tarefas', tarefasRouter);
 app.listen(process.env.PORT || port, ()=> {
     console.info(`Servidor rodando na porta ${port}`);
   })
-

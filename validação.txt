@@ -1,0 +1,6 @@
+VALIDAÇÃO
+
+if (!mongoose.Types.ObjectId.isValid(id)) {
+      res.status(422).send("Código inválido.");
+      return;
+    }

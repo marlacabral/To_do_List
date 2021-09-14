@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 function Conn(url, user, pass, banco){
-    mongoose.connect(`http://localhost:3000/`, {
+    mongoose.connect(`${url}/${banco}`, {
         user: user,
         pass: pass,
         useNewUrlParser: true,
